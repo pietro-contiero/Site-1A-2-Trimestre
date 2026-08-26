@@ -5,9 +5,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Meu site</title> 
         <style> 
-        * {
-            box-sizing: border-box;
-        }
 
         header {
             background-color: #1f1a1a;
@@ -27,15 +24,16 @@
             margin: 0 auto;
             border: 5px solid #f37a09;  
             padding: 16px;
+            display: flex;
+        }
+        
+        img {
+          width: 80px;
+          height: 80px;
         }
 
-        
-        main img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 0 auto 16px auto;
-            border-radius: 4px;
+        .artigo-autor {
+            font-weight: bold;
         }
         </style>
     </head>
@@ -46,10 +44,13 @@
         </header>
 
         <main>
-            <img src="imagem-blog.png" alt="Banner de 'Confecção de Bolachas: Biscoitos Artesanais & Receitas Caseiras' com ilustrações de biscoitos sobre fundo laranja.">
-            <h2>Receitas</h2>
-            <p>Conheça um pouco sobre bolachas</p>
-            <p>Por: Pietro Contiero</p>
+            <img src="imagem-blog.png" alt="Banner de 'Confecção de Bolachas: Biscoitos Artesanais
+             & Receitas Caseiras' com ilustrações de biscoitos sobre fundo laranja.">
+           <div>
+               <h2>Receitas</h2>
+               <p>Conheça um pouco sobre bolachas</p>
+               <p class="artigo-autor">Por: Pietro Contiero</p>
+           </div>
         </main>
     </body>
 </html>
